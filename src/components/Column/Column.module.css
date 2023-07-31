@@ -1,0 +1,13 @@
+.column{
+    width: 2.5rem;
+    background-color: var(--SoftRed);
+    border-radius: 0.2rem;
+}
+
+.currentDay{
+    background-color: hsl(186, 34%, 60%);
+}
+
+.chartContainer{
+    align-self: flex-end;
+}

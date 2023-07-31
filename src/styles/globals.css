@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
-:root{
+:root {
     font-family: 'DM Sans', sans-serif;
-    --width: 45rem;
+    --width: 30rem;
     --SoftRed: hsl(10, 79%, 65%);
     --DarkBrown: hsl(25, 47%, 15%);
     --MediumBrown: hsl(28, 10%, 53%);
@@ -10,19 +10,72 @@
     --paleOrange: hsl(32, 90%, 92%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     color: var(--DarkBrown);
     background-color: var(--Cream);
 }
 
-.center{
+.center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.balanceHead {
+    height: 7rem;
+    width: var(--width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--SoftRed);
+    color: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.balanceHead>* {
+    margin: 2rem;
+}
+
+.balanceHead p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.logo{
+    width: 4rem;
+}
+
+.bodySection{
+    height: 25rem;
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.divider{
+    height: 0.12rem;
+    width: 100%;
+    background-color: hsl(28, 10%, 80%);
+}
+
+.chart{
+    height: 60%;
+    justify-content: space-between;
 }
