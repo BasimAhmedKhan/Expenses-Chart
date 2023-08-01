@@ -1,6 +1,7 @@
 import Column from '@/components/Column/Column'
 import Head from 'next/head'
 import Image from 'next/image'
+import styles from '@/styles/Home.module.css'
 
 export default function Home(props) {
   const {data} = props;
@@ -20,26 +21,26 @@ export default function Home(props) {
         <link rel="icon" href="/icon.png" />
       </Head>
       <main>
-        <div className="container center">
-          <div className="balanceHead">
-            <div className="balance">
+        <div className={`${styles.container} center`}>
+          <div className={styles.balanceHead}>
+            <div className={styles.balance}>
               <p>My Balance</p>
-              <h1 id="balanceVal">$921.48</h1>
+              <h1>$921.48</h1>
             </div>
-            <Image className='logo' src={'./logo.svg'} width={100} height={100} alt='mastercard logo' />
+            <Image style={{width: '4rem'}} src={'./logo.svg'} width={100} height={100} alt='mastercard logo' />
           </div>
-          <div className="bodySection">
+          <div className={styles.bodySection}>
             <h2>Spending - Last 7 days</h2>
-            <div className="chart center">
+            <div className={`center ${styles.chart}`}>
               {column}
             </div>
-            <div className="divider"></div>
-            <div className="bottom center" style={{justifyContent: 'space-between'}}>
-              <div className="thisMonth">
+            <div className={styles.divider}></div>
+            <div className={`center ${styles.bottom}`} style={{justifyContent: 'space-between'}}>
+              <div className={styles.thisMonth}>
                 <p style={{color: 'var(--MediumBrown)'}}>Total this month</p>
                 <h1>$478.33</h1>
               </div>
-              <div className="lastMonth">
+              <div className={styles.lastMonth}>
                 <p style={{fontWeight: '700'}}>+2.4%</p>
                 <p style={{color: 'var(--MediumBrown)'}}>from last month</p>
               </div>
