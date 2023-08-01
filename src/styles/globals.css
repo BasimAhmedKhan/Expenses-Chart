@@ -59,7 +59,7 @@ body {
 }
 
 .bodySection{
-    height: 25rem;
+    height: 28rem;
     width: var(--width);
     display: flex;
     flex-direction: column;

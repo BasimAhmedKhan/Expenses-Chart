@@ -9,5 +9,10 @@
 }
 
 .chartContainer{
+    flex-direction: column;
     align-self: flex-end;
+}
+
+.chartContainer:hover{
+    opacity: 0.7;
 }

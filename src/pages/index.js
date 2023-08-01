@@ -2,7 +2,15 @@ import Column from '@/components/Column/Column'
 import Head from 'next/head'
 import Image from 'next/image'
 
-export default function Home() {
+export default function Home(props) {
+  const {data} = props;
+  if(!data){
+    return <div>Loading...</div>
+  }
+  const column = data.map((e, i) => {
+    return <Column key={i} day={e.day} amount={e.amount} />
+  });
+
   return (
     <>
       <Head>
@@ -13,8 +21,8 @@ export default function Home() {
       </Head>
       <main>
         <div className="container center">
-          <div class="balanceHead">
-            <div class="balance">
+          <div className="balanceHead">
+            <div className="balance">
               <p>My Balance</p>
               <h1 id="balanceVal">$921.48</h1>
             </div>
@@ -23,13 +31,14 @@ export default function Home() {
           <div className="bodySection">
             <h2>Spending - Last 7 days</h2>
             <div className="chart center">
+              {/* <Column />
               <Column />
               <Column />
               <Column />
               <Column />
               <Column />
-              <Column />
-              <Column />
+              <Column /> */}
+              column();
             </div>
             <div className="divider"></div>
             <div className="bottom center" style={{justifyContent: 'space-between'}}>
@@ -38,7 +47,7 @@ export default function Home() {
                 <h1>$478.33</h1>
               </div>
               <div className="lastMonth">
-                <p style={{fontWeight: '700'}}>+2.4% this</p>
+                <p style={{fontWeight: '700'}}>+2.4%</p>
                 <p style={{color: 'var(--MediumBrown)'}}>from last month</p>
               </div>
             </div>
@@ -47,4 +56,15 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+
+export async function getStaticProps(){
+  const response = await fetch("http://localhost:3000/api/expenses");
+  const data = await response.json();
+  return{
+    props: {
+      data: data
+    }
+  };
 }
