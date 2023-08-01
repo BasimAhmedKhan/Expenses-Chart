@@ -1,18 +1,34 @@
-.column{
-    width: 2.5rem;
-    background-color: var(--SoftRed);
-    border-radius: 0.2rem;
-}
-
 .currentDay{
-    background-color: hsl(186, 34%, 60%);
+    background-color: hsl(186, 34%, 60%) !important;
 }
 
 .chartContainer{
     flex-direction: column;
     align-self: flex-end;
+    cursor: pointer;
 }
 
-.chartContainer:hover{
+.column{
+    width: 3rem;
+    background-color: var(--SoftRed);
+    border-radius: 0.2rem;
+}
+
+.amount{
+    height: 2rem;
+    width: 3.3rem;
+    border-radius: 0.2rem;
+    background-color: var(--DarkBrown);
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+}
+
+.chartContainer:hover .amount{
+    opacity: 1;
+}
+
+.chartContainer:hover .column{
     opacity: 0.7;
 }

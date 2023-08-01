@@ -7,8 +7,8 @@ export default function Home(props) {
   if(!data){
     return <div>Loading...</div>
   }
-  const column = data.map((e, i) => {
-    return <Column key={i} day={e.day} amount={e.amount} />
+  const column = data.map((e) => {
+    return <Column key={e.day} day={e.day} amount={e.amount} />;
   });
 
   return (
@@ -26,19 +26,12 @@ export default function Home(props) {
               <p>My Balance</p>
               <h1 id="balanceVal">$921.48</h1>
             </div>
-            <Image className='logo' src={'./logo.svg'} width={100} height={100} />
+            <Image className='logo' src={'./logo.svg'} width={100} height={100} alt='mastercard logo' />
           </div>
           <div className="bodySection">
             <h2>Spending - Last 7 days</h2>
             <div className="chart center">
-              {/* <Column />
-              <Column />
-              <Column />
-              <Column />
-              <Column />
-              <Column />
-              <Column /> */}
-              column();
+              {column}
             </div>
             <div className="divider"></div>
             <div className="bottom center" style={{justifyContent: 'space-between'}}>
@@ -57,7 +50,6 @@ export default function Home(props) {
     </>
   )
 }
-
 
 export async function getStaticProps(){
   const response = await fetch("http://localhost:3000/api/expenses");
