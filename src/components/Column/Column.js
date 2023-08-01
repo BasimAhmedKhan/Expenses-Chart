@@ -7,7 +7,6 @@ export default function Column(props){
     let currentDay = "";
     let str = weekDays[day].slice(0, 3).toLocaleLowerCase();
     if(str == props.day){currentDay = styles.currentDay;}
-    console.log(currentDay);
     return(
         <div className={`center ${styles.chartContainer}`}>
             <div className={`center ${styles.amount}`}>${props.amount}</div>

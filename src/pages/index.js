@@ -53,7 +53,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps(){
-  const response = await fetch("http://localhost:3000/api/expenses");
+  const response = await fetch("http://127.0.0.1:3000/api/expenses");
   const data = await response.json();
   return{
     props: {
