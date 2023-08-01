@@ -53,7 +53,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps(){
-  const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const response = await fetch("https://expenses-chart-mauve.vercel.app/api/expenses");
   const data = await response.json();
   return{
     props: {
