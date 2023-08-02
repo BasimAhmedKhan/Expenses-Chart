@@ -1,6 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Expenses Chart Web App
+
+Expenses Chart Web App buit using NextJS. In this Web App all the data is dynamically fetch through NextJS Server.
+
+Check Out the Live Version  &#10230;  [Budgeting-Web-App](https://expenses-chart-a6btp6bi0-basimahmedkhan.vercel.app/)
+
+## Screenshots
+
+Desktop View:
+
+![App Screenshot](https://github.com/BasimAhmedKhan/Frontend-Mentors-Projects/blob/main/expenses-chart-component-main/design/desktop-design.jpg)
+
+Active State View:
+
+![Active State View](https://github.com/BasimAhmedKhan/Frontend-Mentors-Projects/blob/main/expenses-chart-component-main/design/active-states.jpg)
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
@@ -20,19 +36,41 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Support
 
-## Learn More
+If you like my work, feel free to:
+ - ⭐ this Repository. And we will live happily ever after xD.
+  - Join me on Social: [<img align="left"       alt="BasimAhmedKhan | Facebook" width="22px" src="https://img.icons8.com/color/48/000000/facebook-circled--v1.png" />][facebook] [<img align="left" alt="BasimAhmedKhan | Instagram" width="22px" src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />][instagram] [<img align="left" alt="BasimAhmedKhan | Snapchat" width="22px" src="https://img.icons8.com/color/48/000000/snapchat-circled-logo--v1.png" />][snapchat] [<img align="left" alt="BasimAhmedKhan | LinkedIn" width="22px" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-linkedin-in-logo-used-for-professional-networking-logo-shadow-tal-revivo.png" />][linkedin]
 
-To learn more about Next.js, take a look at the following resources:
+Thanks a Bunch for Stopping By! <3
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[facebook]: https://www.facebook.com/profile.php?id=100009322472394
+[instagram]: https://www.instagram.com/basim_khann
+[snapchat]: https://github.com/BasimAhmedKhan/BasimAhmedKhan/blob/main/assets/WhatsApp%20Image%202022-01-09%20at%207.23.20%20PM.jpeg
+[linkedin]: https://www.linkedin.com/in/basim-khan-604a76189/
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tech Stack
+
+**Front-End**: 
+![HTML](https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png) ![CSS](https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png) ![JS](https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png) 
+
+
+
+
+## Credits & References
+
+| Resource                                                               | Description                                                                                                           |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [frontendmentor][frontendmentor]                                                     | For the UI I took Inspiration from this Template  [frontendmentor] |
+
+[frontendmentor]: https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt
+
+
+
+## License
+
+[MIT](https://github.com/BasimAhmedKhan/Budgeting-Web-App/blob/main/LICENSE)
+
