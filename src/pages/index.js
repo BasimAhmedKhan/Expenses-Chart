@@ -27,7 +27,7 @@ export default function Home(props) {
               <p>My Balance</p>
               <h1>$921.48</h1>
             </div>
-            <Image style={{width: '4rem'}} src={'./logo.svg'} width={100} height={100} alt='mastercard logo' />
+            <Image style={{width: '4rem', height: 'auto'}} src={'./logo.svg'} width={100} height={100} alt='mastercard logo' />
           </div>
           <div className={styles.bodySection}>
             <h2>Spending - Last 7 days</h2>
