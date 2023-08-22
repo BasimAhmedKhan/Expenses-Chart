@@ -52,7 +52,7 @@ export default function Home(props) {
   )
 }
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
   const response = await fetch("https://expenses-chart-mauve.vercel.app/api/expenses");
   const data = await response.json();
   return{
