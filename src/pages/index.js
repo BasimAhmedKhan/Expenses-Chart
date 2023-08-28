@@ -4,12 +4,12 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
 export default function Home(props) {
-  const {data} = props;
+  const {data, day} = props;
   if(!data){
     return <div>Loading...</div>
   }
   const column = data.map((e) => {
-    return <Column key={e.day} day={e.day} amount={e.amount} />;
+    return <Column key={e.day} day={e.day} amount={e.amount} crDay={day} />;
   });
 
   return (
@@ -55,9 +55,11 @@ export default function Home(props) {
 export async function getServerSideProps(){
   const response = await fetch("https://expenses-chart-mauve.vercel.app/api/expenses");
   const data = await response.json();
+  const day = (new Date()).toString().split(' ')[0].toLocaleLowerCase();
   return{
     props: {
-      data: data
+      data: data,
+      day: day
     }
   };
 }
