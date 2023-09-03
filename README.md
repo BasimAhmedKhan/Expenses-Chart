@@ -2,7 +2,7 @@
 
 Expenses Chart Web App buit using NextJS. In this Web App all the data is dynamically fetch through NextJS Server.
 
-Check Out the Live Version  &#10230;  [Budgeting-Web-App](https://expenses-chart-a6btp6bi0-basimahmedkhan.vercel.app/)
+Check Out the Live Version  &#10230;  [Budgeting-Web-App](https://expenses-chart-mauve.vercel.app/)
 
 ## Screenshots
 
